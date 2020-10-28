@@ -46,7 +46,7 @@ const createFeedbackMessage = text => {
 const setFeedbackMessage = score => {
   switch (score) {
     case 25:
-      createFeedbackMessage(`Você fez ${score} pontos!`)
+      createFeedbackMessage(`Não desanime, Você fez ${score} pontos!`)
       break;
 
     case 50:
@@ -99,10 +99,7 @@ form.addEventListener('submit', event => {
   setFeedbackMessage(score)
   removeSubmitFromFrontend()
 })
-
 buttonResetQuiz.addEventListener('click', event => {
   event.preventDefault()
   resetQuiz()
 })
-
-
